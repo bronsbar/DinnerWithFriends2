@@ -13,6 +13,9 @@
 		442B61111FC5C66400DE7E3F /* DinnerWithFriends2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 442B610F1FC5C66400DE7E3F /* DinnerWithFriends2.xcdatamodeld */; };
 		442B61131FC5C66400DE7E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442B61121FC5C66400DE7E3F /* Assets.xcassets */; };
 		442B61161FC5C66400DE7E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442B61141FC5C66400DE7E3F /* LaunchScreen.storyboard */; };
+		442B611E1FC5C70B00DE7E3F /* DinnerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B611D1FC5C70B00DE7E3F /* DinnerTableViewController.swift */; };
+		442B61201FC5C75B00DE7E3F /* dinnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B611F1FC5C75A00DE7E3F /* dinnerModel.swift */; };
+		442B61221FC5C92000DE7E3F /* DinnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B61211FC5C92000DE7E3F /* DinnerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		442B61121FC5C66400DE7E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442B61151FC5C66400DE7E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442B61171FC5C66400DE7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442B611D1FC5C70B00DE7E3F /* DinnerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinnerTableViewController.swift; sourceTree = "<group>"; };
+		442B611F1FC5C75A00DE7E3F /* dinnerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dinnerModel.swift; sourceTree = "<group>"; };
+		442B61211FC5C92000DE7E3F /* DinnerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinnerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,13 @@
 				442B61081FC5C66400DE7E3F /* AppDelegate.swift */,
 				442B610A1FC5C66400DE7E3F /* ViewController.swift */,
 				442B610C1FC5C66400DE7E3F /* Main.storyboard */,
-				442B61121FC5C66400DE7E3F /* Assets.xcassets */,
 				442B61141FC5C66400DE7E3F /* LaunchScreen.storyboard */,
 				442B61171FC5C66400DE7E3F /* Info.plist */,
 				442B610F1FC5C66400DE7E3F /* DinnerWithFriends2.xcdatamodeld */,
+				442B611D1FC5C70B00DE7E3F /* DinnerTableViewController.swift */,
+				442B61211FC5C92000DE7E3F /* DinnerTableViewCell.swift */,
+				442B611F1FC5C75A00DE7E3F /* dinnerModel.swift */,
+				442B61121FC5C66400DE7E3F /* Assets.xcassets */,
 			);
 			path = DinnerWithFriends2;
 			sourceTree = "<group>";
@@ -140,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				442B61111FC5C66400DE7E3F /* DinnerWithFriends2.xcdatamodeld in Sources */,
+				442B611E1FC5C70B00DE7E3F /* DinnerTableViewController.swift in Sources */,
 				442B610B1FC5C66400DE7E3F /* ViewController.swift in Sources */,
+				442B61221FC5C92000DE7E3F /* DinnerTableViewCell.swift in Sources */,
+				442B61201FC5C75B00DE7E3F /* dinnerModel.swift in Sources */,
 				442B61091FC5C66400DE7E3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
