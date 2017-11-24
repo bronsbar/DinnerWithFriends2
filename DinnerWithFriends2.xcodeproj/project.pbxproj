@@ -19,6 +19,7 @@
 		44FA32031FC72CFE00C449BF /* Dinners+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA32011FC72CFE00C449BF /* Dinners+CoreDataClass.swift */; };
 		44FA32041FC72CFE00C449BF /* Dinners+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA32021FC72CFE00C449BF /* Dinners+CoreDataProperties.swift */; };
 		44FA32061FC72D4C00C449BF /* SampleDinners.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44FA32051FC72D4C00C449BF /* SampleDinners.plist */; };
+		CC81A88B1FC8A5C2004301F0 /* AddEditDinnerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC81A88A1FC8A5C2004301F0 /* AddEditDinnerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		44FA32011FC72CFE00C449BF /* Dinners+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dinners+CoreDataClass.swift"; sourceTree = "<group>"; };
 		44FA32021FC72CFE00C449BF /* Dinners+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dinners+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		44FA32051FC72D4C00C449BF /* SampleDinners.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SampleDinners.plist; sourceTree = "<group>"; };
+		CC81A88A1FC8A5C2004301F0 /* AddEditDinnerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditDinnerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				44FA32051FC72D4C00C449BF /* SampleDinners.plist */,
 				442B610F1FC5C66400DE7E3F /* DinnerWithFriends2.xcdatamodeld */,
 				442B611D1FC5C70B00DE7E3F /* DinnerTableViewController.swift */,
+				CC81A88A1FC8A5C2004301F0 /* AddEditDinnerTableViewController.swift */,
 				442B61211FC5C92000DE7E3F /* DinnerTableViewCell.swift */,
 				442B611F1FC5C75A00DE7E3F /* dinnerModel.swift */,
 				442B61121FC5C66400DE7E3F /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 				44FA32031FC72CFE00C449BF /* Dinners+CoreDataClass.swift in Sources */,
 				442B61201FC5C75B00DE7E3F /* dinnerModel.swift in Sources */,
 				442B61091FC5C66400DE7E3F /* AppDelegate.swift in Sources */,
+				CC81A88B1FC8A5C2004301F0 /* AddEditDinnerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,19 +37,19 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I3w-di-HhL">
                                             <rect key="frame" x="88" y="15" width="267" height="108"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucT-b3-dnN">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucT-b3-dnN">
                                                     <rect key="frame" x="0.0" y="0.0" width="267" height="36"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Friends" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Lj-GL-urp">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Friends" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Lj-GL-urp">
                                                     <rect key="frame" x="0.0" y="36" width="267" height="36"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RMG-H4-827">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RMG-H4-827">
                                                     <rect key="frame" x="0.0" y="72" width="267" height="36"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -68,10 +68,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dateLabel" destination="RMG-H4-827" id="WEH-ng-Hee"/>
+                                    <outlet property="dateLabel" destination="RMG-H4-827" id="e3l-qW-jnV"/>
                                     <outlet property="dinnerImage" destination="FRs-Fh-AcS" id="VGK-sK-RGx"/>
-                                    <outlet property="friendsLabel" destination="7Lj-GL-urp" id="G8n-Ft-Jaz"/>
-                                    <outlet property="nameLabel" destination="ucT-b3-dnN" id="FvL-Fq-Tv4"/>
+                                    <outlet property="friendsLabel" destination="7Lj-GL-urp" id="Byo-HZ-mg4"/>
+                                    <outlet property="nameLabel" destination="ucT-b3-dnN" id="607-do-VuE"/>
+                                    <segue destination="x9i-JN-MYU" kind="presentation" identifier="editDinnerSegue" id="QHI-oS-MYn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -81,11 +82,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Dinners" id="drE-9z-snZ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="r6d-sY-cj5">
-                            <connections>
-                                <segue destination="x9i-JN-MYU" kind="presentation" id="T0I-QE-qjW"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="r6d-sY-cj5"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kr-kY-Apl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -95,7 +92,7 @@
         <!--Dinner Details-->
         <scene sceneID="3f3-Fe-YF6">
             <objects>
-                <tableViewController id="tlt-6F-yKC" sceneMemberID="viewController">
+                <tableViewController id="tlt-6F-yKC" customClass="AddEditDinnerTableViewController" customModule="DinnerWithFriends2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="POE-4L-mbI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -278,7 +275,21 @@
                             <outlet property="delegate" destination="tlt-6F-yKC" id="psm-ER-aPe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Dinner Details" id="IK0-ub-wJi"/>
+                    <navigationItem key="navigationItem" title="Dinner Details" id="IK0-ub-wJi">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gUx-aq-A5X"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="LuA-AH-XiU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dinnerDateLabel" destination="frM-lh-6r1" id="wkj-py-eDn"/>
+                        <outlet property="dinnerDescriptionLabel" destination="P9I-Ft-0Ae" id="G1e-Z1-DpB"/>
+                        <outlet property="dinnerFriendsLabel" destination="OXn-Sz-BNs" id="Fcf-5l-o0u"/>
+                        <outlet property="dinnerNameLabel" destination="VfA-Pt-4Pa" id="Mr2-NJ-vON"/>
+                        <outlet property="dinnerNotesLabel" destination="asU-xI-TTk" id="iTY-E6-dHg"/>
+                        <outlet property="dinnerPictureLabel" destination="PDN-yJ-VFe" id="Ake-eQ-qRk"/>
+                        <outlet property="dinnerRatingLabel" destination="dJT-hf-47S" id="Bu2-3O-j9k"/>
+                        <outlet property="dinnerUrlLabel" destination="C0d-If-ROS" id="ImY-4p-pq7"/>
+                        <outlet property="saveButton" destination="LuA-AH-XiU" id="mkE-mm-sLy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wt-DS-Skz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
