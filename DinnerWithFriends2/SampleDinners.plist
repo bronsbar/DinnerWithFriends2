@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item 0 - 2</key>
+	<dict>
+		<key>name</key>
+		<string>rode kool met pensen</string>
+		<key>date</key>
+		<date>2017-11-23T16:30:39Z</date>
+		<key>description</key>
+		<string>mmmm rode kool</string>
+		<key>rating</key>
+		<integer>5</integer>
+		<key>notes</key>
+		<string>mijn lievelingsgerecht</string>
+		<key>url</key>
+		<string>www.apple.com</string>
+		<key>picture</key>
+		<string>No Picture.png</string>
+		<key>friends</key>
+		<array>
+			<string>Bart</string>
+			<string>Sofie</string>
+		</array>
+	</dict>
+	<key>New item</key>
+	<string></string>
+	<key>Item 0</key>
+	<dict>
+		<key>name</key>
+		<string>patatten met ambras</string>
+		<key>date</key>
+		<date>2017-11-23T16:30:39Z</date>
+		<key>description</key>
+		<string>lekkere aardappeltjes</string>
+		<key>rating</key>
+		<integer>5</integer>
+		<key>notes</key>
+		<string>dit is een klassieker</string>
+		<key>url</key>
+		<string>www.apple.com</string>
+		<key>picture</key>
+		<string>Pizza.png</string>
+		<key>friends</key>
+		<array>
+			<string>Bart</string>
+			<string>Koen</string>
+		</array>
+	</dict>
+</dict>
+</plist>

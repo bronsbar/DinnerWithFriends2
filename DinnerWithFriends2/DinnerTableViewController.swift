@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class DinnerTableViewController: UITableViewController {
     
-    var dinners: [DinnerModel] = []
+    // MARK: properties
+    
+    var dinners: [Dinners] = [] // Array of Core Data model
+    var managedContext: NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +28,7 @@ class DinnerTableViewController: UITableViewController {
         
         // load sample dinners
         
-        dinners = DinnerTableViewController.loadSampleDinners()
+//        dinners = DinnerTableViewController.loadSampleDinners()
   /*
         // check if there is a file available
         if let dinnersAvailable = DinnerModel.loadDinners() {

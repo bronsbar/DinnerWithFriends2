@@ -16,6 +16,9 @@
 		442B611E1FC5C70B00DE7E3F /* DinnerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B611D1FC5C70B00DE7E3F /* DinnerTableViewController.swift */; };
 		442B61201FC5C75B00DE7E3F /* dinnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B611F1FC5C75A00DE7E3F /* dinnerModel.swift */; };
 		442B61221FC5C92000DE7E3F /* DinnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B61211FC5C92000DE7E3F /* DinnerTableViewCell.swift */; };
+		44FA32031FC72CFE00C449BF /* Dinners+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA32011FC72CFE00C449BF /* Dinners+CoreDataClass.swift */; };
+		44FA32041FC72CFE00C449BF /* Dinners+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA32021FC72CFE00C449BF /* Dinners+CoreDataProperties.swift */; };
+		44FA32061FC72D4C00C449BF /* SampleDinners.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44FA32051FC72D4C00C449BF /* SampleDinners.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		442B611D1FC5C70B00DE7E3F /* DinnerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinnerTableViewController.swift; sourceTree = "<group>"; };
 		442B611F1FC5C75A00DE7E3F /* dinnerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dinnerModel.swift; sourceTree = "<group>"; };
 		442B61211FC5C92000DE7E3F /* DinnerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinnerTableViewCell.swift; sourceTree = "<group>"; };
+		44FA32011FC72CFE00C449BF /* Dinners+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dinners+CoreDataClass.swift"; sourceTree = "<group>"; };
+		44FA32021FC72CFE00C449BF /* Dinners+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dinners+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		44FA32051FC72D4C00C449BF /* SampleDinners.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SampleDinners.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,8 @@
 		442B60FC1FC5C66400DE7E3F = {
 			isa = PBXGroup;
 			children = (
+				44FA32011FC72CFE00C449BF /* Dinners+CoreDataClass.swift */,
+				44FA32021FC72CFE00C449BF /* Dinners+CoreDataProperties.swift */,
 				442B61071FC5C66400DE7E3F /* DinnerWithFriends2 */,
 				442B61061FC5C66400DE7E3F /* Products */,
 			);
@@ -67,6 +75,7 @@
 				442B610C1FC5C66400DE7E3F /* Main.storyboard */,
 				442B61141FC5C66400DE7E3F /* LaunchScreen.storyboard */,
 				442B61171FC5C66400DE7E3F /* Info.plist */,
+				44FA32051FC72D4C00C449BF /* SampleDinners.plist */,
 				442B610F1FC5C66400DE7E3F /* DinnerWithFriends2.xcdatamodeld */,
 				442B611D1FC5C70B00DE7E3F /* DinnerTableViewController.swift */,
 				442B61211FC5C92000DE7E3F /* DinnerTableViewCell.swift */,
@@ -137,6 +146,7 @@
 			files = (
 				442B61161FC5C66400DE7E3F /* LaunchScreen.storyboard in Resources */,
 				442B61131FC5C66400DE7E3F /* Assets.xcassets in Resources */,
+				44FA32061FC72D4C00C449BF /* SampleDinners.plist in Resources */,
 				442B610E1FC5C66400DE7E3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +160,10 @@
 			files = (
 				442B61111FC5C66400DE7E3F /* DinnerWithFriends2.xcdatamodeld in Sources */,
 				442B611E1FC5C70B00DE7E3F /* DinnerTableViewController.swift in Sources */,
+				44FA32041FC72CFE00C449BF /* Dinners+CoreDataProperties.swift in Sources */,
 				442B610B1FC5C66400DE7E3F /* ViewController.swift in Sources */,
 				442B61221FC5C92000DE7E3F /* DinnerTableViewCell.swift in Sources */,
+				44FA32031FC72CFE00C449BF /* Dinners+CoreDataClass.swift in Sources */,
 				442B61201FC5C75B00DE7E3F /* dinnerModel.swift in Sources */,
 				442B61091FC5C66400DE7E3F /* AppDelegate.swift in Sources */,
 			);
