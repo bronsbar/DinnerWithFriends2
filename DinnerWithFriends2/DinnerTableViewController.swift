@@ -19,9 +19,9 @@ class DinnerTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // add observers application resign active and application will terminate
-        let app = UIApplication.shared.delegate as? AppDelegate
-        managedContext = app!.persistentContainer.viewContext
+//        // add observers application resign active and application will terminate
+//        let app = UIApplication.shared.delegate as? AppDelegate
+//        managedContext = app!.persistentContainer.viewContext
         
 //        NotificationCenter.default.addObserver(self, selector: #selector(DinnerTableViewController.applicationWillResignActive(notification:)), name: NSNotification.Name.UIApplicationWillResignActive, object: app)
 //

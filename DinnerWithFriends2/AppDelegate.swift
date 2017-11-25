@@ -13,14 +13,16 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-//        guard let tabbarController = window?.rootViewController as? UITabBarController, let navigationController = tabbarController.selectedViewController as? UINavigationController, let tableViewcontroller = navigationController.topViewController as? DinnerTableViewController
-//            else { return true}
-//        
-//        tableViewcontroller.managedContext = persistentContainer.viewContext
+         let viewController = window?.rootViewController?.childViewControllers[0] as! UINavigationController
+        let vc = viewController.topViewController as! DinnerTableViewController
+                    vc.managedContext = persistentContainer.viewContext
+        
+        
+       
         
         // Override point for customization after application launch.
         return true
